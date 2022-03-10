@@ -73,6 +73,7 @@ font-family:"didot", "sans-serif";
     margin: 100px auto;
  	border-radius: 30px 150px ;
 	text-align: center;
+	background: rgba(252, 255, 221, 0.158) 
 }
 
    
@@ -87,6 +88,7 @@ h1 {
 	font-size: 2em;
     margin: 0px auto 10px auto;
     color: rgb(0, 0, 0);
+	background-color: black;
 }
 
 
