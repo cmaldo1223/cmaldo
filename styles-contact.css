@@ -99,7 +99,6 @@ p {
 
 
 
-
 nav{
 	font-size: 1.2em;
 	width: 80%;
@@ -108,21 +107,28 @@ nav{
 		font-family: "helvetica", sans-serif;
 }
 
-nav li{
-display: inline;
+nav ul {
+list-style: none;
+text-align: center;
+	letter-spacing: 2px;
 	}
 
-nav a{
-	display:inline-block;
-	padding: 10px;
-	}
+nav ul li {
+	display: inline-block;
+}
 
-a{
-	color: #444;
+nav ul li a {
+	display:block;
+	padding: 15px;
 	text-decoration: none;
-	font-weight: bold;
-	}
-a hover{
+}
+
+nav ul li a, 
+nav ul li a:after 
+nav ul li a:before{
+	transition: all .5s
+}
+nav ul li a hover{
 	color: black;
 	background: pink;
 	}
