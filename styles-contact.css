@@ -60,7 +60,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/background_new.jpg) 
+  background: url(images/newbackground.jpg)
   center center fixed no-repeat;
   background-size: cover;
 font-family:"didot", "sans-serif";
@@ -68,12 +68,29 @@ font-family:"didot", "sans-serif";
 }
 
 .center {
-    width: 80%;
+    width: 80%; /* added this to make div responsive */
+    max-width: 800px;
 	padding: 2%;
     margin: 100px auto;
- 	border-radius: 30px 150px ;
+    border-radius: 30px 150px;
 	text-align: center;
-	background: rgba(252, 255, 221, 0.158) 
+    background: rgba(255, 255, 255 .50); /*this uses opacity of 60% for the background color */
+	/* removed -- border: 4px dashed white;
+    */
+}
+
+   
+#logo {
+    margin-bottom: 50px;
+    margin-top: 40px;
+	text-align: center;
+}
+
+p {
+	font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: 5px;
+    color: #ffffff;
 }
 
    
@@ -87,14 +104,14 @@ h1 {
 	font-family: garamond, serif;
 	font-size: 2em;
     margin: 0px auto 10px auto;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 
 p {
 	font-size: 1.2em;
     line-height: 1.6;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -107,30 +124,19 @@ nav{
 		font-family: "helvetica", sans-serif;
 }
 
-nav ul {
-list-style: none;
-text-align: center;
-	letter-spacing: 2px;
-	}
-
-nav ul li {
+nav li {
 	display: inline-block;
 }
 
-nav ul li a {
+nav a {
 	display:block;
 	padding: 15px;
 	text-decoration: none;
 }
 
-nav ul li a, 
-nav ul li a:after 
-nav ul li a:before{
-	transition: all .5s
-}
-nav ul li a hover{
+a:hover{
 	color: black;
-	background: pink;
+	background: rgb(219, 247, 255);
 	}
     
     
